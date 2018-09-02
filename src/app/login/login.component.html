@@ -1,0 +1,27 @@
+<div class="login-form-wrapper">
+  <div class="login-body">
+    <form #loginForm="ngForm">
+      <div class="form-group">
+        <mat-form-field class="ccode-input-wrpr">
+          <mat-select [(value)]="selectedCode" [disabled]="true">
+            <mat-option *ngFor="let code of countryCodes" value="+{{code}}">
+              +{{code}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field class="example-full-width login-input-wrpr">
+          <input matInput placeholder="Phone Number" [formControl]="phoneNoFormControl">
+          <mat-error *ngIf="phoneNoFormControl.hasError('pattern') && !phoneNoFormControl.hasError('required')">
+            Please enter a valid phone number
+          </mat-error>
+          <mat-error *ngIf="phoneNoFormControl.hasError('required')">
+            Phone number is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <button mat-raised-button color="primary" class="login-btn">Login</button>
+
+    </form>
+  </div>
+
+</div>

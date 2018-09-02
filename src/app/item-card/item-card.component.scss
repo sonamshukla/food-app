@@ -1,0 +1,45 @@
+@import '../shared/_variables';
+.item-type{
+  height:16px;
+  width:16px;
+  border: 1px solid green;
+  margin-top:1px;
+  margin-right: 6px;
+  text-align: center;
+}
+.display-flex{
+  display: flex;
+}
+.card-wrapper{
+  padding:6%;
+  border-top: 5px solid #ECECEC;
+}
+.item-wrapper{
+  flex-direction: column;
+  width: 80%;
+}
+.card-body{
+  display: flex;
+  margin-top: 10px;
+}
+.card-header{
+  margin: 22px 0 28px 0;
+  color: $primary-font-color;
+  font-weight: bold;
+}
+.circle{
+  width: 8px;
+  height: 8px;
+  margin: 3px;
+  border-radius: 50%;
+  background-color: green;
+}
+.add-btn{
+    width: 66px;
+    height: 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    background: none;
+    border: 1px solid $primary-theme-color;
+    color: $primary-theme-color;
+}

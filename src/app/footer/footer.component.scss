@@ -1,0 +1,18 @@
+@import '../shared/_variables';
+.footer-wrapper{
+  border-top: 1px solid rgba(0,0,0,.2);
+  .row{
+    display: inline-block;
+    margin: 5% 8%;
+    width: 9%;
+    padding-right: 1%;
+    text-align: -webkit-center;
+  }
+  .selected{
+    border-bottom: 3px solid $primary-theme-color;
+  }
+  .font-color{
+    color:#5C6979;
+    font-size: 26px;
+  }
+}

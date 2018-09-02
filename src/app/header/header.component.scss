@@ -1,0 +1,10 @@
+@import '../shared/_variables';
+.header-wrapper{
+  padding: 4%;
+  font-size: 27px;
+  color: $primary-font-color;
+  display: flex;
+}
+.back-button{
+  margin-right: 8px;
+}

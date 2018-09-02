@@ -1,0 +1,9 @@
+.cart-main-wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cart-body-wrpr{
+  flex: 1;
+  overflow: auto;
+}

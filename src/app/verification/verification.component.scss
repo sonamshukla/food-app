@@ -1,0 +1,45 @@
+.verification-form-wrapper {
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;
+  height:100%     /* center items horizontally, in this case */
+}
+.verification-body {
+  text-align: center;
+  height:100%;
+
+  .ver-txt-wrpr{
+    position:relative;
+    top:7%;
+    padding: 2%;
+  }
+  .form-wrpr{
+    position:relative;
+    top:10%;
+  }
+  .ver-form-group{
+    padding: 3% 0 6% 0;
+  }
+  .link-wrpr{
+    position: relative;
+    top: 10%;
+    padding: 4% 5% 19% 5%;
+  }     /* will center text in <p>, which is not a flex item */
+}
+.ver-txt-wrpr{
+  .ver-header{
+    font-size: 32px;
+  }
+  .ver-msg-txt{
+    padding: 0 11%;
+  }
+}
+.link-wrpr{
+  .change-link{
+    float:left;
+  }
+  .resend-otp-link{
+    float:right;
+  }
+}

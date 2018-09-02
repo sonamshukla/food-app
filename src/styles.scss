@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import './app/shared/_variables';
+/* #4886FF */
+html,
+body {
+  margin:  0;
+  padding: 0;
+  font-family: roboto;
+  height: 100%;
+  color: $primary-color;
+}
+body {
+  a{
+    color: $primary-theme-color !important;
+  }
+  div{
+    box-sizing: border-box;
+  }
+  button{
+    background-color: transparent;
+    border:none;
+  }
+  /* button{
+    background-color: $primary-theme-color !important;
+  }
+  input:focus{
+    border-color: $primary-theme-color !important;
+  } */
+}
+.main-wrapper{
+  height:100%;
+  .form-group{
+    margin: 6%;
+  }
+  .input-full-width{
+    width:100%;
+  }
+  .col-2-input{
+    width: 40%;
+    margin-left: 10%;
+  }
+  .col-4-input{
+    width: 15%;
+    margin: 0 5%;
+  }
+  input{
+    padding:3px 5px;
+  }
+  .clear{
+    clear:both;
+  }
+  .com-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .com-body{
+    height:100%;
+    width:100%;
+    text-align: center;
+  }
+  .selected-page{
+    color:$primary-theme-color !important;
+  }
+}
+

@@ -1,0 +1,23 @@
+<div class="com-wrapper user-info-form-wrapper">
+    <div class="com-body user-info-form-body">
+      <div class="user-info-heading-wrpr">
+          <p>
+            Little more info
+          </p>
+        </div>
+      <div class="form-container">
+        <form #userInfoForm="ngForm">
+          <div class="form-group">
+            <mat-form-field class="input-full-width">
+              <input matInput placeholder="Name" [formControl]="nameFormControl">
+              <mat-error *ngIf="nameFormControl.hasError('required')">
+                Name is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+          </div>
+          <button mat-raised-button color="primary" class="next-btn">Next</button>
+          <div class="clear"></div>
+        </form>
+      </div>
+    </div>
+  </div>

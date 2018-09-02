@@ -1,0 +1,27 @@
+
+.login-input-wrpr {
+  width: 60%;
+  padding-left: 10%;
+  display: inline-block;
+}
+.ccode-input-wrpr{
+  width : 20%;
+  display:inline-block;
+}
+.login-btn{
+  float: right !important;
+  margin-right: 9% !important;
+}
+.login-body {
+  text-align: center;     /* will center text in <p>, which is not a flex item */
+}
+.login-form-wrapper {
+  display: flex;           /* establish flex container */
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center; /* center items vertically, in this case */
+  align-items: center;
+  height:100%     /* center items horizontally, in this case */
+}
+app-login{
+  height:100%;
+}
