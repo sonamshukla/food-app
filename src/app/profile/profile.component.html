@@ -1,3 +1,30 @@
-<p>
-  profile works!
-</p>
+<div class="profile-wrapper">
+  <div class="profile-header-wrpr">
+    <app-header isBackBtn="false" title="Profile"></app-header>
+  </div>
+  <div class="profile-header-body">
+    <form #verificationForm="ngForm">
+      <div class="form-group">
+
+        <mat-form-field class="input-full-width login-input-wrpr">
+          <input matInput placeholder="Name" ([ngModel])="name" [formControl]="nameFormControl">
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+
+        <mat-form-field class="input-full-width login-input-wrpr">
+          <input matInput placeholder="Phone Number" [formControl]="phoneNoFormControl">
+        </mat-form-field>
+      </div>
+      <div class="form-group">
+
+        <mat-form-field class="input-full-width login-input-wrpr">
+          <input matInput placeholder="Office email" [formControl]="emailFormControl">
+
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+  <div class="profile-header-footer">
+    <app-footer></app-footer>
+  </div>

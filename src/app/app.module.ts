@@ -15,6 +15,8 @@ import { ItemCardComponent } from './item-card/item-card.component';
 import { HeaderComponent } from './header/header.component';
 import { CartViewComponent } from './cart-view/cart-view.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ItemListComponent } from './item-list/item-list.component';
+import { CartItemCardComponent } from './cart-item-card/cart-item-card.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProfileComponent } from './profile/profile.component';
     ItemCardComponent,
     HeaderComponent,
     CartViewComponent,
-    ProfileComponent
+    ProfileComponent,
+    ItemListComponent,
+    CartItemCardComponent
   ],
   imports: [
     BrowserModule,
